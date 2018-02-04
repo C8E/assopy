@@ -55,7 +55,7 @@ def _gravatar(email, size=80, default='identicon', rating='r'):
     # import code for encoding urls and generating md5 hashes
     import urllib, hashlib
 
-    gravatar_url = "http://www.gravatar.com/avatar/" + hashlib.md5(email.lower()).hexdigest() + "?"
+    gravatar_url = "https://www.gravatar.com/avatar/" + hashlib.md5(email.lower()).hexdigest() + "?"
     gravatar_url += urllib.urlencode({
         'default': default,
         'size': size,
